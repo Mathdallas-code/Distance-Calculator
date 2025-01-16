@@ -1,0 +1,21 @@
+name: Auto Merge on PR Submission
+
+# Trigger the workflow when a pull request is opened
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Auto merge pull request
+        uses: pascalgn/automerge-action@v0.15.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          merge_method: squash  # You can use 'merge', 'squash', or 'rebase'
