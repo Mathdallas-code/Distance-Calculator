@@ -12,6 +12,7 @@ import math
 
 # Main loop
 while True:
+    print("Welcome to the distance calculator v1.0.1!")
     use_program=input("Do you want to calculate the distance between two points? (yes/no): ")
     if use_program.lower() == "yes":
         pass
