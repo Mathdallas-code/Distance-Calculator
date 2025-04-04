@@ -10,7 +10,7 @@
 # Importing module(s)
 import math
 # Calculate distance
-def calculate_distance(start_x, start_y, end_x, end_y):
+def calculate_distance(startX, startY, endX, endY):
     return math.sqrt(math.pow(startX - endX, 2) + math.pow(startY - endY, 2))
 
 # Main loop
