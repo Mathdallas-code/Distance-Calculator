@@ -75,5 +75,5 @@ def main():
         distance = calculate_distance(startX, startY, endX, endY)
         print(f"The distance between ({startX}, {startY}) and ({endX}, {endY}) is {distance} units.")
 
-if "__name__" == __main__:
+if __name__ == "__main__":
     main()
